@@ -1,0 +1,141 @@
+.contact-us-wrapper {
+  display: flex;
+  padding: 50px 20px;
+  width: 100%;
+  justify-content: end;
+  align-items: center;
+  background-color: rgba(226, 142, 207, 0.09);
+  border-top: 0.5px solid #DB7093;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.contact-us-block {
+  text-align: center;
+  width: 50%;
+  max-width: 522px;
+  border-radius: 46px 0px 46px 0px;
+  border: 0.5px solid #DB7093;
+  position: relative;
+  box-sizing: border-box;
+  z-index: 2;
+  background-color: white;
+  margin-left: -30px;
+  padding: 100px 50px;
+}
+
+.iframe-wrapper {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 46px 0px 46px 0px;
+}
+
+.contact-us-image-wrapper {
+  width: 50%;
+}
+
+.contact-us-image-wrapper .image {
+  max-width: 915px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.contact-us-image {
+  position: absolute;
+}
+
+.contact-us-image.material-symbols-outlined {
+  font-size: 45px;
+  color: #DB7093;
+}
+
+
+.contact-us-image.one {
+  top: -21px;
+  right: -20px;
+  transform: rotate(-27deg);
+}
+
+.contact-us-image.two {
+  bottom: -21px;
+  left: 20px;
+  transform: rotate(27deg);
+}
+
+.contact-us-wrapper-image {
+  position: absolute;
+  top: -36px;
+  left: 50%; 
+  right: 50%; 
+}
+
+.contact-us-wrapper-image.material-symbols-outlined {
+  font-size: 60px;
+  color: #DB7093;
+}
+
+.contact-us-header {
+  font-family: Poppins;
+  font-size: 35px;
+  font-weight: 600;
+  line-height: 45.37px;
+  letter-spacing: -0.03em;
+  text-align: center;
+  color: #DB7093;
+}
+
+.contact-us-form {
+  text-align: left;
+}
+
+.label {
+  display: block;
+  font-family: Poppins;
+}
+
+.input-wrapper {
+  margin-top: 30px;
+}
+
+.input {
+  height: 30px;
+  width: 100%;
+  border: 1px solid #DB7093;
+}
+
+.submit {
+  margin-top: 30px;
+  font-family: Poppins;
+  font-size: 20px;
+  margin: 30px auto 0px;
+  border: none;
+  background: #DB7093;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.submit:hover {
+  opacity: 1;
+}
+
+@media only screen and (max-width: 992px) {
+  .contact-us-wrapper {
+    flex-direction: column;
+    padding: 50px 0;
+    margin-top: 30px;
+    margin-left: 0;
+  }
+
+  .contact-us-block {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .contact-us-image-wrapper {
+    display: none;
+  }
+}

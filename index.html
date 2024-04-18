@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Meow meow - cat cafe</title>
+  <link rel="stylesheet" type="text/css" href="styles/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <div class="header-background-overlay"></div>
+    <div class="header-logo-wrapper">
+      <img class="header-logo" src="images/logo.png" alt="Meow meow - Cat cafe">
+    </div>
+    <div class="header-text-wrapper">
+      <div class="header-name">MEOW MEOW</div>
+      <div class="header-subheader">
+        <span class="material-symbols-outlined">
+          pets
+        </span>
+        CAT CAFE
+        <span class="material-symbols-outlined">
+          pets
+        </span>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="about-us-wrapper">
+      <div class="about-us-block">
+        <span class="about-us-image one material-symbols-outlined">
+          pets
+        </span>
+        <span class="about-us-image two material-symbols-outlined">
+          pets
+        </span>
+        <h1 class="about-us-title">ABOUT US</h1>
+        <p class="about-us-text">Step into the cozy cat cafe, where feline friends roam freely amidst the aroma of freshly brewed coffee. Snuggle up with a purring companion as you sip your favorite beverage, the gentle ambiance soothing your soul. From playful kittens to regal cats, each one adds a unique charm to your visit, creating unforgettable moments of joy and relaxation in this delightful haven.</p>
+      </div>
+      <div class="my-swiper-wrapper">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img class="swiper-image" src="images/slider-images/image1.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img class="swiper-image" src="images/slider-images/image2.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img class="swiper-image" src="images/slider-images/image3.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img class="swiper-image" src="images/slider-images/image4.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img class="swiper-image" src="images/slider-images/image5.jpg" />
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </div>
+    <div class="contact-us-wrapper">
+      <span class="contact-us-wrapper-image material-symbols-outlined">
+          pets
+        </span>
+      <div class="contact-us-image-wrapper">
+        <img class="image" src="images/contact-us-image.jpg" />
+      </div>
+      <div class="contact-us-block">
+        <span class="contact-us-image one material-symbols-outlined">
+          pets
+        </span>
+        <span class="contact-us-image two material-symbols-outlined">
+          pets
+        </span>
+        <div class="contact-us-header">
+            CONTACT US
+          </div>
+        <div class="contact-us-form">
+          <div class="input-wrapper">
+            <label class="label" for="name">Name</label>
+            <input class="input" type="text" id="textInput" name="name">
+          </div>
+          <div class="input-wrapper">
+            <label class="label" for="phone">Phone number</label>
+            <input class="input" type="text" id="textInput" name="phone">
+          </div>
+          <input class="submit" type="submit" value="SUBMIT">
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="footer-logo-wrapper">
+      <img class="footer-logo" src="images/logo.png" alt="Meow meow - cat cafe">
+    </div>
+    <div class="footer-line"></div>
+    <div class="footer-copywright">
+      © 2024 Meow meow - Cat cafe. All rights reserved.
+    </div>
+  </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+  var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 20,
+      loop: true,
+      autoplay: {
+        delay: 4000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+      breakpoints: {
+        1024: {
+          slidesPerView: 1.5,
+        }
+      }
+    });
+</script>
+</body>
+</html>
